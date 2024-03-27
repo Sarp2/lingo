@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { courses, userProgress } from "@/db/schema";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 type Props = {
-  title: string;
+  title: typeof courses.$inferSelect.title;
 };
 
 export const Header = ({ title }: Props) => {
