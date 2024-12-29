@@ -1,11 +1,12 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { Check, Crown, Star } from "lucide-react";
-import Link from "next/link";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 type Props = {
   id: number;
@@ -40,7 +41,6 @@ export const LessonButton = ({
   }
 
   const rightPosition = indentationLevel * 40;
-  console.log(rightPosition);
 
   const isFirst = index === 0;
   const isLast = index === totalCount;

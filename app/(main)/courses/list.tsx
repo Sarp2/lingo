@@ -1,7 +1,7 @@
 "use client";
 
 import { courses, userProgress } from "@/db/schema";
-import React, { useTransition } from "react";
+import { useTransition } from "react";
 import { Card } from "./card";
 import { useRouter } from "next/navigation";
 import { upsertUserProgress } from "@/actions/user-progress";
@@ -30,7 +30,7 @@ export const List = ({ courses, activeCourseId }: Props) => {
   };
 
   return (
-    <div className="pt-6 grid grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4">
+    <div className="pt-6 grid grid-cols-2 lg:grid-cols-[repeat(auto-fill, minmax(240px, 1fr))] gap-4">
       {courses.map((course) => (
         <Card
           key={course.id}

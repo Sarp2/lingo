@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { courses, userProgress } from "@/db/schema";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 type Props = {
   title: typeof courses.$inferSelect.title;
@@ -17,7 +16,6 @@ export const Header = ({ title }: Props) => {
         </Button>
       </Link>
       <h1 className="text-lg font-bold">{title}</h1>
-      <div></div>
     </div>
   );
 };

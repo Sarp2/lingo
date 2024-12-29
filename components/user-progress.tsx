@@ -1,7 +1,7 @@
 import Link from "next/link";
-import React from "react";
-import { Button } from "./ui/button";
 import Image from "next/image";
+
+import { Button } from "./ui/button";
 import { InfinityIcon } from "lucide-react";
 import { courses } from "@/db/schema";
 
